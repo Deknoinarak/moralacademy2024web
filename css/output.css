@@ -8336,6 +8336,10 @@ html:has(.drawer-open.drawer-open) {
   margin-bottom: 0.75rem;
 }
 
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
 .mr-10 {
   margin-right: 2.5rem;
 }
@@ -8463,8 +8467,8 @@ html:has(.drawer-open.drawer-open) {
   height: 3rem;
 }
 
-.h-screen {
-  height: 100vh;
+.h-full {
+  height: 100%;
 }
 
 .w-12 {
@@ -8504,12 +8508,12 @@ html:has(.drawer-open.drawer-open) {
   min-width: 100%;
 }
 
-.max-w-5xl {
-  max-width: 64rem;
+.max-w-56 {
+  max-width: 14rem;
 }
 
-.max-w-64 {
-  max-width: 16rem;
+.max-w-5xl {
+  max-width: 64rem;
 }
 
 .max-w-screen-lg {
@@ -9559,10 +9563,6 @@ html:has(.drawer-open.drawer-open) {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\/img\/mainbg\.png\'\)\] {
-  background-image: url('/img/mainbg.png');
-}
-
 .bg-\[url\(\'https\:\/\/academy\.moralcenter\.or\.th\/mlc\/img\/mainbg\.png\'\)\] {
   background-image: url('https://academy.moralcenter.or.th/mlc/img/mainbg.png');
 }
@@ -10512,12 +10512,16 @@ body {
 }
 
 @media (min-width: 640px) {
-  .sm\:block {
-    display: block;
+  .sm\:h-full {
+    height: 100%;
   }
 
   .sm\:max-h-16 {
     max-height: 4rem;
+  }
+
+  .sm\:max-h-32 {
+    max-height: 8rem;
   }
 
   .sm\:max-w-none {
@@ -10611,10 +10615,6 @@ body {
     border-right-width: 4px;
   }
 
-  .md\:p-5 {
-    padding: 1.25rem;
-  }
-
   .md\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -10688,6 +10688,12 @@ body {
   .xl\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:inline {
+    display: inline;
   }
 }
 
