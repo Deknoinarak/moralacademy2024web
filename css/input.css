@@ -14,8 +14,9 @@
   font-weight: bold;
 } 
 
-html, body {
+body {
   font-family: 'Line Seed Sans TH', sans-serif;
-  height: 100%;
+  height: 100vh;
+  min-height: 100%;
   width: 100%;
 }
