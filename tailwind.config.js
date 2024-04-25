@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./**/*.{html,js}"],
+  content: ["./**/*.{html,js,json}"],
   theme: {
     extend: {
       keyframes: {
@@ -11,6 +11,9 @@ module.exports = {
       },
       animation: {
         "line-up": 'line-up 1s ease-in-out',
+      },
+      flex: {
+        "5": "0 0 20%"
       }
     },
   },
