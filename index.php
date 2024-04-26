@@ -29,7 +29,6 @@ require 'admin/src/config/db.php';
       $result = mysqli_query($conn, $sql);
 
       if (mysqli_num_rows($result) > 0) {
-        // output data of each row
         while ($row = mysqli_fetch_assoc($result)) {
 
       ?>
@@ -50,7 +49,49 @@ require 'admin/src/config/db.php';
             องค์ปาฐกถา ผู้บริหาร และวิทยากร
           </h2>
         </div>
-        <div id="lecturers" class="flex flex-col md:flex-row w-full gap-5 justify-center flex-wrap"></div>
+        <div id="lecturers" class="flex flex-col md:flex-row w-full gap-5 justify-center flex-wrap">
+          <?php
+
+          $sql = "SELECT * FROM lecturers ORDER BY display_order";
+          $result = mysqli_query($conn, $sql);
+
+          if (mysqli_num_rows($result) > 0) {
+            while ($row = mysqli_fetch_assoc($result)) {
+
+          ?>
+              <a <?php
+
+                  if ($row["history"] !== "") {
+                    echo 'href="history.php?id=' . $row["id"] . '"';
+                  }
+
+                  ?> class="flex md:block gap-4 items-center md:justify-between xl:w-1/6 md:w-1/4 lg:w-1/5 group">
+                <img src="<?= $row["img"] ?>" alt="" class="bg-white rounded-full group-hover:scale-[1.02] transition-all w-32 md:w-full">
+                <div class="text-left md:text-center mt-2">
+                  <p class="text-sky-200 group-hover:text-white text-lg font-bold mb-0 pb-0 break-words">
+                    <?= $row["name"] ?>
+                  </p>
+                  <span class="text-sky-200 group-hover:text-white block">
+                    <?= $row["role"] ?>
+                  </span>
+                  <?php
+
+                  if ($row["subtitle"] !== '') {
+                  ?>
+                    <span class="text-sky-200 text-xs font-bold"><?= $row["subtitle"] ?></span>
+                  <?php
+                  }
+
+                  ?>
+                </div>
+              </a>
+          <?php
+
+            }
+          }
+
+          ?>
+        </div>
       </section>
 
       <div class="my-5 grid w-full gap-7 max-w-5xl">

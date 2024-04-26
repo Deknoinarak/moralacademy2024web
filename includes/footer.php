@@ -134,69 +134,6 @@
       behavior: "smooth"
     });
   }
-
-  // Auto Render Lecturer Card
-  const lecturersWrapper = document.getElementById("lecturers");
-
-  fetch("./assets/lecturers.json")
-    .then((response) => response.json())
-    .then((json) =>
-      json.forEach((el) => {
-        const parentLink = document.createElement("a");
-        parentLink.setAttribute("href", "#history.php?id=" + el.id);
-        parentLink.setAttribute(
-          "class",
-          "flex md:block gap-4 items-center md:justify-between xl:w-1/6 md:w-1/4 lg:w-1/5 group"
-        );
-
-        const img = document.createElement("img");
-        img.setAttribute(
-          "src",
-          "assets/img/lecturer/" + el.id + ".png"
-        );
-        img.setAttribute("alt", "");
-        img.setAttribute(
-          "class",
-          "bg-white rounded-full group-hover:scale-[1.02] transition-all w-32 md:w-full"
-        );
-
-        const detailsWrapper = document.createElement("div");
-        detailsWrapper.setAttribute("class", "text-left md:text-center mt-2");
-
-        const name = document.createElement("p");
-        name.setAttribute(
-          "class",
-          "text-sky-200 group-hover:text-white text-lg font-bold mb-0 pb-0 break-words"
-        );
-        name.innerHTML = el.name;
-
-        const role = document.createElement("span");
-        role.setAttribute(
-          "class",
-          "text-sky-200 group-hover:text-white block"
-        );
-        role.innerHTML = el.role.replaceAll("'", '"');
-
-        detailsWrapper.appendChild(name);
-        detailsWrapper.appendChild(role);
-
-        if (el.subtitle) {
-          const subtitle = document.createElement("span");
-          subtitle.setAttribute(
-            "class",
-            "text-sky-200 text-xs font-bold"
-          );
-          subtitle.innerHTML = el.subtitle.replaceAll("'", '"');
-
-          detailsWrapper.appendChild(subtitle);
-        }
-
-        parentLink.appendChild(img);
-        parentLink.appendChild(detailsWrapper);
-
-        lecturersWrapper.appendChild(parentLink);
-      })
-    );
 </script>
 </body>
 
