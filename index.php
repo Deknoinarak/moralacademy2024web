@@ -1,6 +1,7 @@
 <?php
 
-require 'includes/header.php'
+require 'includes/header.php';
+require 'admin/src/config/db.php';
 
 ?>
 
@@ -22,9 +23,23 @@ require 'includes/header.php'
         </h3>
       </header>
 
-      <iframe src="https://www.youtube.com/embed/ZiwWXe47KxY" title="โครงการพัฒนาชุมชนผู้นำคุณธรรมวิถียั่งยืน โดย รศ.นพ.สุริยเดว ทรีปาตี │ The Exclusive" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="my-5 w-full aspect-video max-w-screen-lg"></iframe>
+      <?php
 
-      <iframe src="https://www.youtube.com/embed/M7eO6YP0pd0" title="โครงการพัฒนาชุมชนผู้นำคุณธรรมวิถียั่งยืน โดย ดร.ศิริลักษณ์ เมฆสังข์ │ The Exclusive" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="my-5 w-full aspect-video max-w-screen-lg"></iframe>
+      $sql = "SELECT video_id FROM videos ORDER BY level";
+      $result = mysqli_query($conn, $sql);
+
+      if (mysqli_num_rows($result) > 0) {
+        // output data of each row
+        while ($row = mysqli_fetch_assoc($result)) {
+
+      ?>
+          <iframe src="https://www.youtube.com/embed/<?= $row["video_id"] ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="my-5 w-full aspect-video max-w-screen-lg"></iframe>
+      <?php
+
+        }
+      }
+
+      ?>
 
       <section class="flex justify-center items-center my-5 mb-8 flex-col gap-3 md:gap-0">
         <div class="my-7">
@@ -90,6 +105,8 @@ require 'includes/header.php'
 </div>
 
 <?php
+
+mysqli_close($conn);
 
 require 'includes/footer.php'
 

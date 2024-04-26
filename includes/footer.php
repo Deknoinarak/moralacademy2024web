@@ -15,19 +15,19 @@
       <h3 class="md:hidden text-2xl text-[#0d68a3] block font-bold mt-5">
         พาร์ทเนอร์ | Partners
       </h3>
-      <img src="img/logo/fff.jpg" alt="มูลนิธิดั่งพ่อสอน" class="w-44" />
-      <img src="img/logo/fmchula.jpg" alt="คณะแพทย์จุฬาฯ" class="w-44" />
+      <img src="assets/img/logo/fff.jpg" alt="มูลนิธิดั่งพ่อสอน" class="w-44" />
+      <img src="assets/img/logo/fmchula.jpg" alt="คณะแพทย์จุฬาฯ" class="w-44" />
       <div class="md:border-r-4 border-[#0d68a3] md:pr-10 min-w-full flex justify-center border-b-4 pb-10 md:border-b-0 md:pb-0">
-        <img src="img/logo/dtgo.png" alt="DTGO" class="w-44" />
+        <img src="assets/img/logo/dtgo.png" alt="DTGO" class="w-44" />
       </div>
 
       <h3 class="md:hidden text-2xl text-[#0d68a3] block font-bold">
         สปอนเซอร์ | Sponsors
       </h3>
-      <img src="img/logo/cmg.svg" alt="CMG" class="w-44" />
-      <img src="img/logo/cg.jpeg" alt="CENTRALGROUP" class="w-44" />
-      <img src="img/logo/pea.jpg" alt="PEA" class="w-44" />
-      <img src="img/logo/scg.jpg" alt="SCG" class="w-44" />
+      <img src="assets/img/logo/cmg.svg" alt="CMG" class="w-44" />
+      <img src="assets/img/logo/cg.jpeg" alt="CENTRALGROUP" class="w-44" />
+      <img src="assets/img/logo/pea.jpg" alt="PEA" class="w-44" />
+      <img src="assets/img/logo/scg.jpg" alt="SCG" class="w-44" />
     </div>
   </div>
 </div>
@@ -152,7 +152,7 @@
         const img = document.createElement("img");
         img.setAttribute(
           "src",
-          "img/lecturer/" + el.id + ".png"
+          "assets/img/lecturer/" + el.id + ".png"
         );
         img.setAttribute("alt", "");
         img.setAttribute(
