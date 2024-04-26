@@ -70,9 +70,13 @@
             </div>
 
             <div class="sb-sidenav-menu-heading">Manage</div>
-            <a class="nav-link" href="index.php">
+            <a class="nav-link" href="content.php?page=users">
               <div class="sb-nav-link-icon"><i class="fas fa-users"></i></div>
               Users
+            </a>
+            <a class="nav-link" href="content.php?page=roles">
+              <div class="sb-nav-link-icon"><i class="fas fa-key"></i></div>
+              Roles
             </a>
 
             <div class="sb-sidenav-menu-heading">Interface</div>

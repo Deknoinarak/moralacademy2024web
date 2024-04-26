@@ -6,6 +6,7 @@ $GLOBALS["conn"] = $conn;
 
 include 'src/functions/yt.php';
 include 'src/functions/speaker.php';
+include 'src/functions/user.php';
 
 if (function_exists("addYoutubeVid")) {
   if (isset($_GET["add"])) {
@@ -16,6 +17,10 @@ if (function_exists("addYoutubeVid")) {
 
       case 'speaker':
         addSpeaker($_POST, $_FILES);
+        break;
+
+      case 'user':
+        addUser($_POST);
         break;
 
       default:

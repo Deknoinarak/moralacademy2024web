@@ -12,6 +12,10 @@ switch ($_GET["page"]) {
     include_once 'src/core/lecturers.php';
     break;
 
+  case 'users':
+    include_once 'src/core/users.php';
+    break;
+
   default:
     include_once '../404.html';
     break;
