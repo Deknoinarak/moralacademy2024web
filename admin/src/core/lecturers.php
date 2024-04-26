@@ -16,15 +16,15 @@
         if (mysqli_num_rows($result) > 0) {
           while ($row = mysqli_fetch_assoc($result)) {
         ?>
-            <li id="<?php echo $row['id']; ?>" class="ui-sortable-handle card p-3">
+            <li id="<?php echo $row['id']; ?>" class="ui-sortable-handle card p-3" style="cursor: grab;">
               <div>
                 <div class="row align-items-center justify-content-between w-100">
                   <div class="row align-items-center">
-                    <img src="<?= $row["img"] ?>" alt="" class="col-3">
+                    <img style="max-height: 8rem; width: auto;" src="<?= $row["img"] ?>" alt="" class="col-3">
                     <div class="col">
-                      <h2 class="fs-3"><?= $row["name"] ?></h2>
-                      <h3 class="fs-5 fw-bold"><?= $row["role"] ?></h3>
-                      <h6 class="fs-6">Subtitle:
+                      <h2 class="fs-4"><?= $row["name"] ?></h2>
+                      <h3 class="fs-6 fw-bold"><?= $row["role"] ?></h3>
+                      <span class="fs-6 d-block">Subtitle:
                         <?php
 
                         if ($row["subtitle"] != "")
@@ -32,8 +32,8 @@
                         else echo "-";
 
                         ?>
-                      </h6>
-                      <span class="fs-6">History:
+                      </span>
+                      <span class="fs-6 d-block">History:
                         <?php
 
                         if ($row["history"] != "")
