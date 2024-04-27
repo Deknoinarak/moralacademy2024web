@@ -37,7 +37,7 @@
                         <?php
 
                         if ($row["history"] != "")
-                          echo "<a href=" .  $row["history"] . ">" . $row["subtitle"] . "</a>";
+                          echo "<a target='_blank' href=" .  $row["history"] . ">See Content</a>";
                         else echo "-";
 
                         ?>
