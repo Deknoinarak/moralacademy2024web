@@ -16,6 +16,10 @@ switch ($_GET["page"]) {
     include_once 'src/core/users.php';
     break;
 
+  case 'roles':
+    include_once 'src/core/roles.php';
+    break;
+
   default:
     include_once '../404.html';
     break;

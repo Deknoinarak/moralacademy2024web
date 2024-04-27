@@ -14,7 +14,6 @@ if (function_exists("addYoutubeVid")) {
       case 'ytvid':
         addYoutubeVid($_POST["ytid"]);
         break;
-
       case 'speaker':
         addSpeaker($_POST, $_FILES);
         break;

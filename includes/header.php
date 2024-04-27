@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="css/output.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   <link rel="shortcut icon" href="https://moralcenter.or.th/templates/moralcenter2023/favicon.png" />
+  <meta name="description" content="Moral Academy By CMP's MLC is a course for leaders/exectutives to develop a moral leaders community to develop a sustainable moral community in the society.">
+  <meta name="google-site-verification" content="qh0nb2Q4XwmU8HdvDtRSmJRmJbaj13LgNk_gowTPNOQ" />
   <title>
     โครงการพัฒนาชุมชน ผู้นำคุณธรรมวิถียั่งยืน รุ่นที่ 1 - Moral Academy
   </title>
