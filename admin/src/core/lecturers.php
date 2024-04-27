@@ -1,5 +1,5 @@
 <div class="container-fluid px-4">
-  <h1 class="mt-4">Speakers</h1>
+  <h1 class="mt-4 fs-1">Speakers</h1>
   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addSpeaker">
     <i class="fa-solid fa-plus"></i>
     Add Speakers

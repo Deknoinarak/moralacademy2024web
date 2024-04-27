@@ -1,5 +1,5 @@
 <div class="container-fluid px-4">
-  <h1 class="mt-4">YouTube Videos</h1>
+  <h1 class="mt-4 fs-1">YouTube Videos</h1>
   <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#addVideo">
     <i class="fa-solid fa-plus"></i>
     Add Video

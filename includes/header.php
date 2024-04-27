@@ -14,18 +14,18 @@
   </title>
 </head>
 
-<body class="bg-[#010477] bg-[url('https://academy.moralcenter.or.th/mlc/img/mainbg.png')] bg-cover bg-no-repeat bg-center bg-fixed">
-  <div class="w-full">
-    <nav class="overflow-hidden sticky top-0 w-full flex justify-center bg-white sm:bg-[#010477] sm:justify-between sm:items-center shadow-lg text-white z-50 flex-col sm:flex-row items-center" id="navbar">
-      <div class="max-w-56 sm:max-w-none sm:max-h-32 md:max-h-32 lg:max-h-32">
-        <img src="assets/img/Logo.png" alt="Organized by: M-Culture, CMP" class="sm:max-w-none sm:max-h-32 md:max-h-32 lg:max-h-32" />
+<body class="tw-bg-[#010477] tw-bg-[url('https://academy.moralcenter.or.th/mlc/img/mainbg.png')] tw-bg-cover tw-bg-no-repeat tw-bg-center tw-bg-fixed">
+  <div class="tw-w-full">
+    <nav class="tw-overflow-hidden tw-sticky tw-top-0 tw-w-full tw-flex tw-justify-center tw-bg-white sm:tw-bg-[#010477] sm:tw-justify-between sm:tw-items-center tw-shadow-lg tw-text-white tw-z-50 tw-flex-col sm:tw-flex-row tw-items-center" id="navbar">
+      <div class="tw-max-w-56 sm:tw-max-w-none sm:tw-max-h-32 md:tw-max-h-32 lg:tw-max-h-32">
+        <img src="assets/img/Logo.png" alt="Organized by: M-Culture, CMP" class="sm:tw-max-w-none sm:tw-max-h-32 md:tw-max-h-32 lg:tw-max-h-32" />
       </div>
 
-      <div class="flex items-center bg-[#010477] w-full justify-center py-2">
-        <div class="hidden lg:block px-5 xl:text-lg text-right">
+      <div class="tw-flex tw-items-center tw-bg-[#010477] tw-w-full tw-justify-center tw-py-2">
+        <div class="tw-hidden lg:tw-block tw-px-5 xl:tw-text-lg tw-text-right">
           <div>MORAL LEADERS COMMUNITY FOR</div>
           <div>SUSTAINABLE DEVELOPMENT FORUM 2024</div>
         </div>
-        <img src="assets/img/MLC1.png" alt="MLC" class="w-32 mr-10" />
+        <img src="assets/img/MLC1.png" alt="MLC" class="tw-w-32 tw-mr-10" />
       </div>
     </nav>
