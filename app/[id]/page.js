@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useEffect, useLayoutEffect, useState } from "react";
+import Image from "next/image";
 
 export default function Page() {
   const params = useParams();
@@ -37,7 +38,7 @@ export default function Page() {
         setHistoryInfo(info[0]);
       }
     }
-  }, [data]);
+  }, [data, isLoading, params.id]);
 
   if (isLoading) {
     return (
@@ -75,10 +76,13 @@ export default function Page() {
                 </h2>
               </header>
 
-              <img
+              <Image
+                width={0}
+                height={0}
                 src={`/mlc/assets/history/${historyInfo.id}.jpg`}
-                alt
-                className="w-full"
+                alt=""
+                sizes="100vw"
+                className="w-full h-auto"
               />
             </div>
           </div>

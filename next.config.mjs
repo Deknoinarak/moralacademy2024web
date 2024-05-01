@@ -2,7 +2,14 @@
 const nextConfig = {
   basePath: "/mlc",
   images: {
-    domains: ['moralcenter.or.th']
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "moralcenter.or.th",
+        port: "",
+        pathname: "/images/**",
+      },
+    ],
   },
 };
 

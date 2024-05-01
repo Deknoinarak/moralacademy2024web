@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 // import lecturers from "../public/assets/lecturers.js";
@@ -90,7 +91,9 @@ export default function Home() {
                       aria-disabled={!el.history}
                       tabIndex={!el.history ? -1 : undefined}
                     >
-                      <img
+                      <Image
+                        width={320}
+                        height={320}
                         src={`/mlc/assets/img/lecturers/${el.id}.png`}
                         alt=""
                         className="bg-white rounded-full group-hover:scale-[1.02] transition-all w-32 md:w-full"
@@ -105,9 +108,10 @@ export default function Home() {
                           dangerouslySetInnerHTML={{ __html: el.role }}
                         ></div>
                         {el.subtitle && (
-                          <span className="text-sky-200 text-xs font-bold">
-                            {el.subtitle}
-                          </span>
+                          <div
+                            className="text-sky-200 text-xs font-bold"
+                            dangerouslySetInnerHTML={{ __html: el.subtitle }}
+                          ></div>
                         )}
                       </div>
                     </Link>
@@ -163,7 +167,7 @@ export default function Home() {
                   ออกแบบโครงการพัฒนาเศรษฐกิจ สังคม สิ่งแวดล้อม และวัฒนธรรม
                   สู่ความยั่งยืนด้วยแนวทางและปณิธาน
                 </b>{" "}
-                "ปรัชญาของเศรษฐกิจพอเพียง"
+                &quot;ปรัชญาของเศรษฐกิจพอเพียง&quot;
               </p>
             </div>
           </div>
