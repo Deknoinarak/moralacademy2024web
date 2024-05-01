@@ -33,7 +33,7 @@ const lecturers = [
     id: "5",
     name: "คุณสุวิทย์ เมษินทรีย์",
     role: "ประธานกรรมการแพลตฟอร์ม 'Youth in Charge'",
-    history,
+    history: true,
   },
 
   {

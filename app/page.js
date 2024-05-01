@@ -1,9 +1,23 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import Lecturers from "../assets/lecturers";
+"use client";
 
-const Home = () => {
+import Link from "next/link";
+import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
+// import lecturers from "../public/assets/lecturers.js";
+
+export default function Home() {
+  const [data, setData] = useState(null);
+  const [isLoading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch("/mlc/api/lecturers")
+      .then((res) => res.json())
+      .then((data) => {
+        setData(data);
+        setLoading(false);
+      });
+  }, []);
+
   return (
     <motion.div
       className="block static"
@@ -57,32 +71,48 @@ const Home = () => {
               id="lecturers"
               className="flex flex-col md:flex-row w-full gap-5 justify-center flex-wrap"
             >
-              {Lecturers.map((el, i) => (
-                <Link
-                  key={i}
-                  to={el.history && `/mlc/${el.id}`}
-                  className="flex md:block gap-4 items-center md:justify-between xl:w-1/6 md:w-1/4 lg:w-1/5 group"
-                >
-                  <img
-                    src={`/mlc/assets/img/lecturers/${el.id}.png`}
-                    alt=""
-                    className="bg-white rounded-full group-hover:scale-[1.02] transition-all w-32 md:w-full"
-                  />
-                  <div className="text-left md:text-center mt-2">
-                    <div className="text-sky-200 group-hover:text-white text-lg font-bold mb-0 pb-0 break-words">
-                      {el.name}
-                    </div>
-                    <span className="text-sky-200 group-hover:text-white block">
-                      {el.role}
-                    </span>
-                    {el.subtitle && (
-                      <span className="text-sky-200 text-xs font-bold">
-                        {el.subtitle}
-                      </span>
-                    )}
-                  </div>
-                </Link>
-              ))}
+              {isLoading && (
+                <div className="flex items-center justify-center my-10">
+                  <span className="loading loading-spinner loading-lg mr-3"></span>{" "}
+                  <span className="font-bold text-lg">Loading...</span>
+                </div>
+              )}
+              {!isLoading &&
+                data &&
+                data.map((el, i) => {
+                  return (
+                    <Link
+                      key={i}
+                      href={el.history ? `/${el.id}` : ""}
+                      className={`flex md:block gap-4 items-center md:justify-between xl:w-1/6 md:w-1/4 lg:w-1/5 group ${
+                        !el.history && "pointer-events-none"
+                      }`}
+                      aria-disabled={!el.history}
+                      tabIndex={!el.history ? -1 : undefined}
+                    >
+                      <img
+                        src={`/mlc/assets/img/lecturers/${el.id}.png`}
+                        alt=""
+                        className="bg-white rounded-full group-hover:scale-[1.02] transition-all w-32 md:w-full"
+                      />
+                      <div className="text-left md:text-center mt-2">
+                        <div
+                          className="text-sky-200 group-hover:text-white text-lg font-bold mb-0 pb-0 break-words"
+                          dangerouslySetInnerHTML={{ __html: el.name }}
+                        ></div>
+                        <div
+                          className="text-sky-200 group-hover:text-white block"
+                          dangerouslySetInnerHTML={{ __html: el.role }}
+                        ></div>
+                        {el.subtitle && (
+                          <span className="text-sky-200 text-xs font-bold">
+                            {el.subtitle}
+                          </span>
+                        )}
+                      </div>
+                    </Link>
+                  );
+                })}
             </div>
           </section>
 
@@ -141,6 +171,15 @@ const Home = () => {
       </div>
     </motion.div>
   );
-};
+}
 
-export default Home;
+async function getData() {
+  const res = await fetch("/mlc/api/lecturers");
+
+  if (!res.ok) {
+    // This will activate the closest `error.js` Error Boundary
+    throw new Error("Failed to fetch data");
+  }
+
+  return res.json();
+}
