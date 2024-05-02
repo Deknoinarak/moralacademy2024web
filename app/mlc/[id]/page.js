@@ -37,6 +37,9 @@ export default function Page({ params }) {
           width={0}
           height={0}
           src={`/assets/history/${data.id}.jpg`}
+          loading="eager"
+          priority={true}
+          fetchPriority="high"
           alt=""
           sizes="100vw"
           className="w-full h-auto"
