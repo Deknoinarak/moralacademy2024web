@@ -1,16 +1,10 @@
-'use client'
-
 import Image from "next/image";
-import { motion } from "framer-motion";
 
 export default function NavBar() {
   return (
-    <motion.nav
+    <nav
       className="overflow-hidden sticky top-0 w-full flex justify-center bg-white sm:bg-[#010477] sm:justify-between sm:items-center shadow-lg text-white z-50 flex-col sm:flex-row items-center"
       id="navbar"
-      initial={{ y: -20, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.7, ease: [0.6, -0.05, 0.01, 0.99] }}
     >
       <div className="max-w-56 sm:max-w-none sm:max-h-32 md:max-h-32 lg:max-h-32 relative">
         <Image
@@ -41,6 +35,6 @@ export default function NavBar() {
           height={935}
         />
       </div>
-    </motion.nav>
+    </nav>
   );
 }

@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  height: 100vh;
+  min-height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
 .yt-lite {
   background-color: #000;
   position: relative;

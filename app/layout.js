@@ -1,10 +1,10 @@
 import localFont from "next/font/local";
 import "./globals.css";
-import NavBar from "./ui/navbar";
-import Sponsors from "./ui/sponsors";
-import Download from "./ui/download";
-import ToTopBtn from "./ui/backToTop";
-import Footer from "./ui/footer";
+import NavBar from "./components/navbar";
+import Sponsors from "./components/sponsors";
+import Download from "./components/download";
+import ToTopBtn from "./components/backToTop";
+import Footer from "./components/footer";
 
 const lineSeed = localFont({
   src: [
@@ -36,6 +36,8 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         />
+        <link rel="preload" href={"/assets/img/Logo187.webp"} as="image" />
+        <link rel="preload" href={"/assets/img/MLC1.png"} as="image" />
         <meta
           name="google-site-verification"
           content="uvNWpS9GXZx0tIja6ByT2G3Azr6Z6BqIl0Tk2tGOG6k"
@@ -60,9 +62,9 @@ export default function RootLayout({ children }) {
           <Download />
 
           <Footer />
-        </div>
 
-        <ToTopBtn />
+          <ToTopBtn />
+        </div>
       </body>
     </html>
   );
