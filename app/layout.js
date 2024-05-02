@@ -36,10 +36,6 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         />
-        <link
-          rel="shortcut icon"
-          href="https://moralcenter.or.th/templates/moralcenter2023/favicon.png"
-        />
         <meta
           name="google-site-verification"
           content="qh0nb2Q4XwmU8HdvDtRSmJRmJbaj13LgNk_gowTPNOQ"
