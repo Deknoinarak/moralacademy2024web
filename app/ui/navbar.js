@@ -8,7 +8,7 @@ export default function NavBar() {
     >
       <div className="max-w-56 sm:max-w-none sm:max-h-32 md:max-h-32 lg:max-h-32 relative">
         <Image
-          src="/mlc/assets/img/Logo187.webp"
+          src="/assets/img/Logo187.webp"
           alt="Organized by: M-Culture, CMP"
           className="sm:max-w-none sm:max-h-32 md:max-h-32 lg:max-h-32 w-auto"
           loading="eager"
@@ -25,7 +25,7 @@ export default function NavBar() {
           <div>SUSTAINABLE DEVELOPMENT FORUM 2024</div>
         </div>
         <Image
-          src="/mlc/assets/img/MLC1.png"
+          src="/assets/img/MLC1.png"
           loading="eager"
           fetchPriority="high"
           alt="MLC"
