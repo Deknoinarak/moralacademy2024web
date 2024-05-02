@@ -10,10 +10,13 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.19",
+    "@justinribeiro/lite-youtube": "^1.5.0",
     "framer-motion": "^11.1.7",
+    "lite-youtube-embed": "^0.3.2",
     "next": "14.2.3",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-lite-youtube-embed": "^2.4.0"
   },
   "devDependencies": {
     "daisyui": "^4.10.3",

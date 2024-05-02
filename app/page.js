@@ -1,5 +1,6 @@
 "use client";
 
+import LiteYouTubeEmbed from "react-lite-youtube-embed";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -44,20 +45,22 @@ export default function Home() {
             </h3>
           </header>
 
-          <iframe
-            src="https://www.youtube.com/embed/ZiwWXe47KxY"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-            className="my-5 w-full aspect-video max-w-screen-lg"
-          ></iframe>
-          <iframe
-            src="https://www.youtube.com/embed/M7eO6YP0pd0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-            className="my-5 w-full aspect-video max-w-screen-lg"
-          ></iframe>
+          <LiteYouTubeEmbed
+            aspectHeight={9}
+            aspectWidth={16}
+            wrapperClass="yt-lite w-full h-full aspect-video max-w-screen-lg my-5 bg-cover bg-center"
+            id="ZiwWXe47KxY"
+            title="YouTube Embed"
+            webp
+          />
+          <LiteYouTubeEmbed
+            aspectHeight={9}
+            aspectWidth={16}
+            wrapperClass="yt-lite w-full h-full aspect-video max-w-screen-lg my-5 bg-cover bg-center"
+            id="M7eO6YP0pd0"
+            title="YouTube Embed"
+            webp
+          />
 
           <section className="flex justify-center items-center my-5 mb-8 flex-col gap-3 md:gap-0">
             <div className="my-7">
