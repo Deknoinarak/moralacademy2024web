@@ -96,7 +96,7 @@ export default function Home() {
                       <Image
                         width={320}
                         height={320}
-                        src={`/mlc/assets/img/lecturers/${el.id}.png`}
+                        src={`/assets/img/lecturers/${el.id}.png`}
                         alt=""
                         className="bg-white rounded-full group-hover:scale-[1.02] transition-all w-32 md:w-full"
                       />

@@ -47,7 +47,7 @@ export default function RootLayout({ children }) {
       </head>
       <body
         className={
-          `bg-[#010477] bg-[url('https://academy.moralcenter.or.th/mlc/assets/img/mainbg.png')] bg-cover bg-no-repeat bg-center bg-fixed text-white ` +
+          `bg-[#010477] bg-[url('/assets/img/mainbg.webp')] bg-cover bg-no-repeat bg-center bg-fixed text-white ` +
           lineSeed.className
         }
       >

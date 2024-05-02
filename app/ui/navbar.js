@@ -13,6 +13,7 @@ export default function NavBar() {
           className="sm:max-w-none sm:max-h-32 md:max-h-32 lg:max-h-32 w-auto"
           loading="eager"
           fetchPriority="high"
+          priority={true}
           width={499}
           height={187}
         />
@@ -28,6 +29,7 @@ export default function NavBar() {
           loading="eager"
           fetchPriority="high"
           alt="MLC"
+          priority={true}
           className="w-32 mr-10"
           width={1361}
           height={935}
