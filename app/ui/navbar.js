@@ -11,6 +11,7 @@ export default function NavBar() {
           src="/mlc/assets/img/Logo187.webp"
           alt="Organized by: M-Culture, CMP"
           className="sm:max-w-none sm:max-h-32 md:max-h-32 lg:max-h-32 w-auto"
+          loading="eager"
           width={499}
           height={187}
         />
@@ -23,6 +24,7 @@ export default function NavBar() {
         </div>
         <Image
           src="/mlc/assets/img/MLC1.png"
+          loading="eager"
           alt="MLC"
           className="w-32 mr-10"
           width={1361}
