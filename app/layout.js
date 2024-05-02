@@ -38,6 +38,10 @@ export default function RootLayout({ children }) {
         />
         <meta
           name="google-site-verification"
+          content="uvNWpS9GXZx0tIja6ByT2G3Azr6Z6BqIl0Tk2tGOG6k"
+        />
+        <meta
+          name="google-site-verification"
           content="qh0nb2Q4XwmU8HdvDtRSmJRmJbaj13LgNk_gowTPNOQ"
         />
       </head>
