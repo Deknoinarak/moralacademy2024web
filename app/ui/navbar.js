@@ -12,6 +12,7 @@ export default function NavBar() {
           alt="Organized by: M-Culture, CMP"
           className="sm:max-w-none sm:max-h-32 md:max-h-32 lg:max-h-32 w-auto"
           loading="eager"
+          fetchPriority="high"
           width={499}
           height={187}
         />
@@ -25,6 +26,7 @@ export default function NavBar() {
         <Image
           src="/mlc/assets/img/MLC1.png"
           loading="eager"
+          fetchPriority="high"
           alt="MLC"
           className="w-32 mr-10"
           width={1361}
