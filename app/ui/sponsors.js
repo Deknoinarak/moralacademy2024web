@@ -22,14 +22,14 @@ export default function Sponsors() {
           <Image
             width={200}
             height={200}
-            src="/mlc/assets/img/logo/fff.jpg"
+            src="/assets/img/logo/fff.jpg"
             alt="มูลนิธิดั่งพ่อสอน"
             className="w-44"
           />
           <Image
             width={200}
             height={200}
-            src="/mlc/assets/img/logo/fmchula.jpg"
+            src="/assets/img/logo/fmchula.jpg"
             alt="คณะแพทย์จุฬาฯ"
             className="w-44"
           />
@@ -37,7 +37,7 @@ export default function Sponsors() {
             <Image
               width={200}
               height={200}
-              src="/mlc/assets/img/logo/dtgo.png"
+              src="/assets/img/logo/dtgo.png"
               alt="DTGO"
               className="w-44"
             />
@@ -49,28 +49,28 @@ export default function Sponsors() {
           <Image
             width={200}
             height={200}
-            src="/mlc/assets/img/logo/cmg.svg"
+            src="/assets/img/logo/cmg.svg"
             alt="CMG"
             className="w-44"
           />
           <Image
             width={1366}
             height={768}
-            src="/mlc/assets/img/logo/cg.jpeg"
+            src="/assets/img/logo/cg.jpeg"
             alt="CENTRALGROUP"
             className="w-44"
           />
           <Image
             width={1366}
             height={768}
-            src="/mlc/assets/img/logo/pea.jpg"
+            src="/assets/img/logo/pea.jpg"
             alt="PEA"
             className="w-44"
           />
           <Image
             width={1366}
             height={768}
-            src="/mlc/assets/img/logo/scg.jpg"
+            src="/assets/img/logo/scg.jpg"
             alt="SCG"
             className="w-44"
           />

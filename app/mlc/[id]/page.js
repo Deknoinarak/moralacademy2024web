@@ -62,7 +62,7 @@ export default function Page() {
           <div className="container mx-auto md:mt-10 mt-3 p-5 mb-10 text-white max-w-5xl">
             <div className="flex flex-col items-start justify-center">
               <Link
-                href={"/"}
+                href={"/mlc/"}
                 className="mb-5 underline text-sky-300 hover:text-sky-200 transition-all"
               >
                 {"<"} กลับไปหน้าแรก
@@ -79,7 +79,7 @@ export default function Page() {
               <Image
                 width={0}
                 height={0}
-                src={`/mlc/assets/history/${historyInfo.id}.jpg`}
+                src={`/assets/history/${historyInfo.id}.jpg`}
                 alt=""
                 sizes="100vw"
                 className="w-full h-auto"
