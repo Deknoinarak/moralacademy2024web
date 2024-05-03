@@ -1,4 +1,4 @@
-<button id="to-top-button" onclick="scrollToTop()" class="fixed z-90 bottom-8 right-8 w-12 h-12 border-0 p-3 rounded-full drop-shadow-md bg-indigo-500 text-white text-2xl items-center justify-center flex transition-all">
+<button id="to-top-button" title="Back To Top" onclick="scrollToTop()" class="fixed z-90 bottom-8 right-8 w-12 h-12 border-0 p-3 rounded-full drop-shadow-md bg-indigo-500 text-white text-2xl items-center justify-center flex transition-all">
   <i class="fa-solid fa-caret-up"></i>
 </button>
 
