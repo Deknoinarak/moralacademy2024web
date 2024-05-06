@@ -2,10 +2,10 @@
   <div class="container mx-auto py-3 max-w-5xl">
     <div class="md:grid md:grid-cols-3 gap-5 px-5">
       <div class="col-span-2">
-        <h2 class="text-2xl mb-2 font-bold">
+        <h2 class="text-xl mb-2 font-bold">
           ศูนย์คุณธรรม (องค์การมหาชน)
         </h2>
-        <p class="text-lg">
+        <p class="text-base">
           เลขที่ 69 อาคารวิทยาลัยการจัดการ มหาวิทยาลัยมหิดล (CMMU) ชั้น
           16-17 ถ.วิภาวดีรังสิต แขวงสามเสนใน เขตพญาไท กรุงเทพฯ 10400
         </p>

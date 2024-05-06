@@ -39,10 +39,10 @@
                                             } ?> href="/mlc/?id=<?= $speaker["id"] ?>" class="flex md:block gap-4 items-center md:justify-between xl:w-1/6 md:w-1/4 lg:w-1/5 group">
           <img src="/mlc/assets/img/lecturers/<?= $speaker["id"] ?>.png" alt="" class="bg-white rounded-full group-hover:scale-[1.02] transition-all w-32 md:w-full" />
           <div class="text-left md:text-center mt-2">
-            <div class="text-sky-200 group-hover:text-white font-bold mb-0 pb-0 break-words text-lg whitespace-nowrap max-[375px]:whitespace-nowrap md:whitespace-nowrap hyphens-manual">
+            <div class="text-sky-200 group-hover:text-white font-bold mb-0 pb-0 break-words text-lg whitespace-nowrap max-[375px]:whitespace-nowrap md:whitespace-nowrap hyphens-manual leading-snug">
               <?= $speaker["name"] ?>
             </div>
-            <div class="text-sky-200 group-hover:text-white block md:text-sm md:whitespace-nowrap hyphens-manual">
+            <div class="text-sky-200 group-hover:text-white block text-sm md:whitespace-nowrap hyphens-manual leading-tight">
               <?= $speaker["role"] ?>
             </div>
             <?php if (isset($speaker["subtitle"])) { ?>
