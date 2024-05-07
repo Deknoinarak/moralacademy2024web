@@ -461,5 +461,6 @@
       flipHorizontal: false,
       flipVertical: false,
     },
+    transition: false
   });
 </script>
