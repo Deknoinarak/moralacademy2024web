@@ -1,4 +1,4 @@
-<div class="container mx-auto md:mt-10 mt-3 p-5 text-white">
+<section class="container mx-auto md:mb-10 p-5 pt-0 text-white">
   <div class="flex flex-col items-center justify-center">
     <div class="my-5 grid w-full gap-7 max-w-5xl">
       <div>
@@ -30,4 +30,4 @@
       </div>
     </div>
   </div>
-</div>
+</section>

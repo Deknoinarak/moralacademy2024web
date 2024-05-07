@@ -13,7 +13,7 @@ function layout($include)
 
 
   <div class="w-full flex h-full justify-between flex-col" id="root">
-    <div class="container mx-auto md:my-10 mt-3 p-5">
+    <div class="container mx-auto md:my-10 mt-3 p-5 pb-0">
 
       <?php
 
@@ -26,8 +26,8 @@ function layout($include)
       <?php
 
       // Include Component
-      include_once __DIR__ . "/components/sponsors.php";
       include_once __DIR__ . "/components/download.php";
+      include_once __DIR__ . "/components/sponsors.php";
 
       include_once __DIR__ . "/components/totop.php";
 
