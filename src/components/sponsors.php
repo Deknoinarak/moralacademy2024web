@@ -17,10 +17,10 @@
       </h3>
       <img src="/mlc/assets/img/logo/fmchula.jpg" alt="คณะแพทย์จุฬาฯ" class="w-44" />
       <img src="/mlc/assets/img/logo/fff.jpg" alt="มูลนิธิดั่งพ่อสอน" class="w-44" />
-      <img src="/mlc/assets/img/logo/dtgo.jpg" alt="DTGO" class="w-44" />
+      <img src="/mlc/assets/img/logo/DTGO.jpg" alt="DTGO" class="w-44" />
       <div class="md:border-r-4 border-[#0d68a3] md:pr-10 min-w-full flex justify-center border-b-4 pb-10 md:border-b-0 md:pb-0 h-full">
         <div class="flex items-center">
-          <img src="/mlc/assets/img/logo/mqdc.jpg" alt="DTGO" class="w-44" />
+          <img src="/mlc/assets/img/logo/MQDC.jpg" alt="DTGO" class="w-44" />
         </div>
       </div>
 
